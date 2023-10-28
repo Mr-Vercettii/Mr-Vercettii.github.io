@@ -1,0 +1,32 @@
+/* Estilos para el cuerpo (<body>): */
+body {
+    padding-top: 0; /* Elimina el relleno en la parte superior del cuerpo. */
+    margin-bottom: 0; /* Elimina el margen en la parte inferior del cuerpo. */
+    position: relative; /* Establece la posición del cuerpo como relativa con respecto a su posición original en el documento. */
+    min-height: 100vh; /* Establece la altura mínima del cuerpo al 100% del viewport height. */
+}
+
+/* Estilos para la barra de navegación (<navbar>): */
+.navbar {
+    margin-bottom: 0; /* Elimina el margen en la parte inferior de la barra de navegación. */
+}
+
+/* Estilos para la imagen dentro de la marca de la barra de navegación: */
+.navbar-brand img {
+    height: 100px; /* Tamaño del logo de la barra de navegación. */
+}
+
+/* Estilos para el carrusel (<carousel>): */
+.carousel {
+    margin-top: 0; /* Elimina el margen en la parte superior del carrusel. */
+}
+
+/* Estilos para el pie de página (<footer>): */
+.footer {
+    background-color: #f8f9fa; /* Color de fondo del pie de página. */
+    padding: 20px 0; /* Espaciado interno del pie de página. */
+    text-align: center; /* Alineación del texto al centro en el pie de página. */
+    position: absolute; /* Establece la posición del pie de página como absoluta. */
+    width: 100%; /* Establece el ancho del pie de página al 100% del contenedor padre. */
+    bottom: 0; /* Fija el pie de página en la parte inferior del contenedor padre. */
+}

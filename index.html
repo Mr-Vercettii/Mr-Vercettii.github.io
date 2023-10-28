@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ammunation</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Bootstrap JS + Popper.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="JS/script.js"></script>
+    <link rel="stylesheet" href="CSS/styles.css">
+	<link rel="icon" href="IMG/icon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="IMG/icon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Modal -->
+    <div class="modal" id="ageModal" tabindex="-1" role="dialog" aria-labelledby="ageModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ageModalLabel">Acepto ser un adulto mayor de 18 años.</h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Acepto</button>
+                    <button type="button" class="btn btn-secondary">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<span class="navbar-brand"><img src="IMG/logo-image-800x420.png" alt="Logo" height="60"></span>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#home">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#contacto">Contacto</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#armas-municion">Armas y munición</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#inicia-sesion">Inicia sesión</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+
+	<!-- Carrusel de imágenes con controles de navegación a lo ancho de la página -->
+	<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="width: 100%;">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img class="d-block w-100" src="IMG/1.jpg" alt="First slide">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="IMG/2.jpg" alt="Second slide">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="IMG/3.jpg" alt="Third slide">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="IMG/4.jpg" alt="Fourth slide">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="IMG/5.jpg" alt="Fifth slide">
+			</div>
+		</div>
+		<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+
+    <!-- Contenido de la sección (margen de 10px) -->
+	<div class="container mt-5 mb-2"> 
+		<!-- Sección Home -->
+		<div id="home" class="section-content p-4 rounded shadow">
+			<h2 class="text-center mb-4">¡Bienvenido a Ammunation!</h2>
+			
+			<div class="row">
+				<div class="col-md-6">
+					<img src="IMG/arma.jpg" class="img-fluid rounded mb-3" alt="Arma de fuego">
+				</div>
+				<div class="col-md-6">
+					<p class="lead mb-4">Explora el mundo de las armas de fuego y la munición con Ammunation. Somos tu guía definitiva para:</p>
+					<ul class="list-group">
+						<li class="list-group-item"><i class="fas fa-check"></i> Conocer diferentes tipos de armas de fuego</li>
+						<li class="list-group-item"><i class="fas fa-check"></i> Entender la tecnología detrás de las municiones</li>
+						<li class="list-group-item"><i class="fas fa-check"></i> Aprender sobre la historia y evolución de las armas</li>
+						<li class="list-group-item"><i class="fas fa-check"></i> Obtener consejos de seguridad y almacenamiento</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row mt-4">
+				<div class="col-md-12">
+					<h3 class="text-center mb-3">Nuestros Recursos</h3>
+					<p>En Ammunation, te ofrecemos una amplia gama de recursos, incluyendo artículos detallados, vídeos educativos y guías paso a paso. Nuestros expertos están dedicados a proporcionarte información precisa y confiable sobre armas de fuego y munición.</p>
+					<p>Explora nuestras secciones para aprender sobre las últimas tecnologías en armamento, técnicas de tiro seguras, y las regulaciones y leyes vigentes en diferentes países.</p>
+				</div>
+			</div>
+			
+			<div class="row mt-4">
+				<div class="col-md-12">
+					<h3 class="text-center mb-3">¡Únete a nuestra Comunidad!</h3>
+					<p>Conéctate con entusiastas de armas de fuego y expertos en nuestra comunidad en línea. Participa en discusiones, comparte tus conocimientos y aprende de otros apasionados como tú.</p>
+					<p>No importa si eres un novato o un experto, en Ammunation, todos son bienvenidos.</p>
+				</div>
+			</div>
+		</div>
+
+        <!-- Sección Contacto -->
+		<div id="contacto" class="section-content p-4 rounded shadow">
+        <h2 class="text-center mb-4">¡Contáctanos!</h2>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <form>
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Tu Nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" class="form-control" id="email" placeholder="tucorreo@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea class="form-control" id="mensaje" rows="5" placeholder="Tu mensaje..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h4>Información de Contacto:</h4>
+				<p><strong>Dirección:</strong> 123 Calle Principal, Miami, Florida, Estados Unidos, 33101</p>
+				<p><strong>Teléfono:</strong> +1 123 456 7890</p>
+				<p><strong>Correo Electrónico:</strong> info@ammunation.com</p>
+				<h4>Horario de Atención:</h4>
+				<p>Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+				<p>Sábado y Domingo: Cerrado</p>
+            </div>
+			
+			<!-- Mapa de Google Maps -->
+			<div class="embed-responsive embed-responsive-16by9 mt-4">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114964.39567892201!2d-80.31185914889669!3d25.782538872046505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2sMiami%2C%20Florida%2C%20EE.%20UU.!5e0!3m2!1ses!2smx!4v1697855680971!5m2!1ses!2smx" class="embed-responsive-item" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+			
+        </div>
+    </div>
+
+        <!-- Sección Armas y Munición -->
+        <div id="armas-municion" class="section-content p-4 rounded shadow">
+		<h2 class="text-center mb-4">Conoce estas increíbles armas y tipos de munición</h2>
+			<div class="row">
+				<!-- Item 1 -->
+				<div class="col-md-3 mb-4">
+					<img src="IMG/ak-47.jpg" class="img-fluid rounded mb-2" alt="AK-47">
+					<h4 class="mb-2">AK-47</h4>
+					<p>Fusil de asalto diseñado por Mijaíl Kaláshnikov.</p>
+				</div>
+
+				<!-- Item 2 -->
+				<div class="col-md-3 mb-4">
+					<img src="IMG/m16.jpg" class="img-fluid rounded mb-2" alt="M16">
+					<h4 class="mb-2">M16</h4>
+					<p>Fusil de asalto utilizado por las fuerzas armadas de Estados Unidos.</p>
+				</div>
+
+				<!-- Item 3 -->
+				<div class="col-md-3 mb-4">
+					<img src="IMG/9mm-parabellum.jpg" class="img-fluid rounded mb-2" alt="9mm Parabellum">
+					<h4 class="mb-2">9mm Parabellum</h4>
+					<p>Cartucho utilizado en pistolas en todo el mundo.</p>
+				</div>
+
+				<!-- Item 4 -->
+				<div class="col-md-3 mb-4">
+					<img src="IMG/50-caliber-bmg.jpg" class="img-fluid rounded mb-2" alt=".50 Caliber BMG">
+					<h4 class="mb-2">.50 Caliber BMG</h4>
+					<p>Cartucho utilizado en rifles de francotirador y ametralladoras pesadas.</p>
+				</div>
+
+				<!-- Item 5 -->
+				<div class="col-md-3 mb-4">
+					<img src="IMG/shotgun.jpg" class="img-fluid rounded mb-2" alt="Escopeta">
+					<h4 class="mb-2">Escopeta</h4>
+					<p>Arma de fuego de cañón corto utilizada para disparar cartuchos de perdigones o balas.</p>
+				</div>
+
+				<!-- Item 6 -->
+				<div class="col-md-3 mb-4">
+					<img src="IMG/rpg.jpg" class="img-fluid rounded mb-2" alt="Lanzacohetes RPG">
+					<h4 class="mb-2">Lanzacohetes RPG</h4>
+					<p>Arma portátil diseñada para destruir vehículos blindados y estructuras.</p>
+				</div>
+
+				<!-- Item 7 -->
+				<div class="col-md-3 mb-4">
+					<img src="IMG/sniper-rifle.jpg" class="img-fluid rounded mb-2" alt"Fusil de Francotirador">
+					<h4 class="mb-2">Fusil de Francotirador</h4>
+					<p>Arma de fuego de precisión utilizada para disparos a larga distancia.</p>
+				</div>
+
+				<!-- Item 8 -->
+				<div class="col-md-3 mb-4">
+					<img src="IMG/glock.jpg" class="img-fluid rounded mb-2" alt="Pistola Glock">
+					<h4 class="mb-2">Pistola Glock</h4>
+					<p>Pistola semiautomática ampliamente utilizada por fuerzas policiales y militares.</p>
+				</div>
+
+				<!-- Item 9 -->
+				<div class="col-md-3 mb-4">
+					<img src="IMG/ak-74.jpg" class="img-fluid rounded mb-2" alt="AK-74">
+					<h4 class="mb-2">AK-74</h4>
+					<p>Fusil de asalto diseñado en la Unión Soviética como reemplazo del AK-47.</p>
+				</div>
+
+				<!-- Item 10 -->
+				<div class="col-md-3 mb-4">
+					<img src="IMG/revolver.jpg" class="img-fluid rounded mb-2" alt="Revólver">
+					<h4 class="mb-2">Revólver</h4>
+					<p>Arma de fuego de repetición que contiene un cilindro giratorio con varias recámaras para balas.</p>
+				</div>
+
+				<!-- Item 11 -->
+				<div class="col-md-3 mb-4">
+					<img src="IMG/mp5.jpg" class="img-fluid rounded mb-2" alt="MP5">
+					<h4 class="mb-2">MP5</h4>
+					<p>Subfusil utilizado por fuerzas especiales y unidades de élite en todo el mundo.</p>
+				</div>
+
+				<!-- Item 12 -->
+				<div class="col-md-3 mb-4">
+					<img src="IMG/m1911.jpg" class="img-fluid rounded mb-2" alt="M1911">
+					<h4 class="mb-2">M1911</h4>
+					<p>Pistola semiautomática que ha sido ampliamente utilizada por fuerzas armadas y civiles desde principios del siglo XX.</p>
+				</div>
+
+				<!-- Item 13 -->
+				<div class="col-md-3 mb-4">
+					<img src="IMG/grenade.jpg" class="img-fluid rounded mb-2" alt="Granada de Mano">
+					<h4 class="mb-2">Granada de Mano</h4>
+					<p>Artefacto explosivo lanzado a mano utilizado en operaciones militares y tácticas.</p>
+				</div>
+
+				<!-- Item 14 -->
+				<div class="col-md-3 mb-4">
+					<img src="IMG/barrett-50.jpg" class="img-fluid rounded mb-2" alt=".50 Caliber Barrett">
+					<h4 class="mb-2">.50 Caliber Barrett</h4>
+					<p>Rifle de francotirador utilizado en situaciones de largo alcance.</p>
+				</div>
+
+				<!-- Item 15 -->
+				<div class="col-md-3 mb-4">
+					<img src="IMG/ump45.jpg" class="img-fluid rounded mb-2" alt="UMP45">
+					<h4 class="mb-2">UMP45</h4>
+					<p>Subfusil utilizado por fuerzas policiales y militares en todo el mundo.</p>
+				</div>
+
+				<!-- Item 16 -->
+				<div class="col-md-3 mb-4">
+					<img src="IMG/desert-eagle.jpg" class="img-fluid rounded mb-2" alt="Desert Eagle">
+					<h4 class="mb-2">Desert Eagle</h4>
+					<p>Pistola semiautomática conocida por su poderoso calibre y diseño imponente.</p>
+				</div>
+			</div>
+        </div>
+
+        <!-- Sección Inicia Sesión -->
+        <div id="inicia-sesion" class="section-content p-4 rounded shadow">
+            <div class="container mt-5">
+				<div class="row justify-content-center">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-body">
+								<h2 class="text-center mb-4">Iniciar Sesión</h2>
+								<form id="loginForm">
+									<div class="form-group">
+										<label for="email">Correo Electrónico:</label>
+										<input type="email" class="form-control" id="email" required>
+									</div>
+									<div class="form-group">
+										<label for="password">Contraseña:</label>
+										<input type="password" class="form-control" id="password" required>
+									</div>
+									<button type="submit" class="btn btn-primary btn-block">Iniciar Sesión</button>
+									<p class="text-center mt-3">¿No tienes una cuenta? <a href="#" data-toggle="modal" data-target="#registroModal">Regístrate aquí</a></p>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Modal de Registro -->
+			<div class="modal fade" id="registroModal" tabindex="-1" aria-labelledby="registroModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="registroModalLabel">Registrarse</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<form id="registroForm">
+								<div class="form-group">
+									<label for="nombreRegistro">Nombre:</label>
+									<input type="text" class="form-control" id="nombreRegistro" required>
+								</div>
+								<div class="form-group">
+									<label for="emailRegistro">Correo Electrónico:</label>
+									<input type="email" class="form-control" id="emailRegistro" required>
+								</div>
+								<div class="form-group">
+									<label for="passwordRegistro">Contraseña:</label>
+									<input type="password" class="form-control" id="passwordRegistro" required>
+								</div>
+								<button type="submit" class="btn btn-primary btn-block">Registrarse</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </div>
+
+	<!-- Pie de página -->
+	<div class="bg-dark text-light text-center py-3 mt-5">
+		<p class="mb-0">© 2023 Ammunation. Todos los derechos reservados.</p>
+	</div>
+</body>
+</html>
